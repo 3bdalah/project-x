@@ -12,3 +12,12 @@ import setupPrice from '../filters/price.js';
 import { store } from '../store.js';
 import display from '../displayProducts.js';
 import { getElement } from '../utils.js';
+
+
+const laoding = getElement('.page-loading');
+display(store, getElement('.products-container'));
+console.log("hello");
+setupCompanies(store);
+setupSearch(store);
+setupPrice(store);
+laoding.style.display = 'none';

@@ -10,7 +10,7 @@ const display = (products, element) => {
         
         <div class="product-icons">
         <a href="product.html?id=${id}" class="product-icon">
-         <i class="fas fa-shopping-cart"></i>
+         <i class="fas fa-search"></i>
         </a>
         <button class="product-cart-btn product-icon" data-id="${id}">
          <i class="fas fa-shopping-cart"></i>
@@ -19,13 +19,13 @@ const display = (products, element) => {
          </div>
          <footer>
            <p class="product-name">${name} </p>
-           <h4  class="product-price">$${formatPrice(price)}</h4>
+           <h4  class="product-price">${formatPrice(price)}</h4>
          </footer>
       </article> `;
     }).join("");
-    element.addEvenListener('click', function (e) {
+    element.addEventListener('click',  (e) =>  {
        const parent = e.target.parentElement;
-       if(parent.classList.contains('product')){
+       if(parent.classList.contains('product-cart-btn')){
         addToCart(parent.dataset.id);
        }
     })
