@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Products | Comfy</title>
+    <title>Products</title>
     <!-- font-awesome -->
     <link
       rel="stylesheet"
@@ -24,31 +24,35 @@
           </button>
           <ul class="nav-links">
             <li>
-              <a href="index.html" class="nav-link">
-                home
-              </a>
+              <a href="index.html" class="nav-link"> home </a>
             </li>
             <li>
-              <a href="products.html" class="nav-link">
-                products
-              </a>
+              <a href="products.html" class="nav-link"> products </a>
             </li>
             <li>
-              <a href="about.html" class="nav-link">
-                about
-              </a>
+              <a href="about.html" class="nav-link"> about </a>
             </li>
           </ul>
         </div>
         <!-- logo -->
-        <img src="./images/logo-black.svg" class="nav-logo" alt="logo" />
-        <!-- cart icon -->
+        <img
+          src="images/svg_20230729_213951_0000.svg"
+          class="nav-logo"
+          alt="logo"
+          width="350px"
+        />
+        <!-- cart -->
         <div class="toggle-container">
           <button class="toggle-cart">
             <i class="fas fa-shopping-cart"></i>
           </button>
           <span class="cart-item-count">1</span>
         </div>
+      </div>
+      <div class="loginicon">
+        <button class="toggle-cart" onclick="window.open('test.html')">
+          <i class="fas fa-user"></i>
+        </button>
       </div>
     </nav>
     <!-- hero -->
@@ -100,9 +104,7 @@
         <div class="cart-items"></div>
         <!-- footer -->
         <footer>
-          <h3 class="cart-total text-slanted">
-            total : $12.99
-          </h3>
+          <h3 class="cart-total text-slanted">total : $12.99</h3>
           <button class="cart-checkout btn">checkout</button>
         </footer>
       </aside>
@@ -139,6 +141,95 @@
       <!-- products -->
       <div class="products-container"></div>
     </section>
+    <section id="newsletter" class="newsletter">
+      <div class="container">
+        <div class="hm-footer-details">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Our Pages</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title"></div>
+                <div class="hm-foot-menu">
+                  <h3>Here To Help</h3>
+                  <p>
+                    Have a question? You may find an <br />
+                    answer in our FAQs. But you can also contact us:
+                  </p>
+                  <h3>Order by phone</h3>
+                  <p>Available everyday</p>
+                  <p>(+20) 1598886595</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Customer Service</h3>
+                </div>
+                <div class="hm-foot-menu">
+                  <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="hm-footer-widget">
+                <div class="hm-foot-title">
+                  <h3>Email Us</h3>
+                </div>
+                <div class="hm-foot-para">
+                  <p>Get in touch by email</p>
+                </div>
+                <div class="hm-foot-email">
+                  <div class="foot-email-box">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Email Here...."
+                    />
+                  </div>
+                  <div class="foot-email-subscribe">
+                    <span><i class="fa fa-location-arrow"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="hm-footer-copyright text-center">
+          <div class="footer-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-behance"></i></a>
+          </div>
+          <p>&copy;Copyright 2023. All Rights Reserved. Design By Team1-ITI</p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
     <!-- page loading -->
     <div class="page-loading">
       <h2>Loading...</h2>
