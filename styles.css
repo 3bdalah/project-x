@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
 /*
 =============== 
 Variables
@@ -37,6 +37,12 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
 
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -60,8 +66,8 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background: var(--clr-white);
   color: var(--clr-grey-1);
   line-height: 1.5;
@@ -127,7 +133,7 @@ p {
   display: block;
 }
 .text-slanted {
-  font-family: 'Kaushan Script', cursive;
+  font-family: "Kaushan Script", cursive;
 }
 .section-center {
   width: 90vw;
@@ -291,7 +297,7 @@ Hero
   min-height: 100vh;
   margin-top: -6rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(./images/main-bcg.jpeg) center/cover;
+    url(images/main111.jpg) center/cover;
   display: grid;
   place-items: center;
   color: var(--clr-white);
@@ -774,4 +780,256 @@ Single Product Page
   .single-product-center {
     grid-template-columns: 1fr 1fr;
   }
+}
+/* Sofa-coolection */
+#sofa-collection {
+  position: relative;
+}
+.sofa-collection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+.sofa-collection.collectionbg1 {
+  background: url(images/sofa-collection-banner.jpg) no-repeat;
+}
+
+.sofa-collection:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 33.4%;
+  background: rgba(51, 59, 62, 0.95);
+}
+.sofa-collection:after {
+  background: rgba(106, 119, 129, 0.3);
+  left: auto;
+  right: 0;
+  width: 66.6%;
+}
+.sofa-collection-txt {
+  position: relative;
+  max-width: 596px;
+  z-index: 1;
+}
+.sofa-collection-txt h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 30px;
+}
+.sofa-collection-txt h4 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.sofa-collection-txt h4 span {
+  color: #e99c2e;
+}
+.sofa-collection-txt p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  margin: 25px 0 10px;
+  margin-left: 30px;
+}
+.sofa-collection-price {
+  margin-bottom: 3px;
+}
+
+.sofa-collection .btn {
+  margin-left: 30px;
+}
+
+/*.feature  */
+.feature {
+  padding: 110px 0 0px;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.feature-content,
+.blog-content {
+  margin-top: 75px;
+}
+.single-feature,
+.single-blog {
+  margin-bottom: 30px;
+}
+
+/*.single-feature-txt */
+.single-feature-txt,
+.single-blog-txt {
+  margin-top: 25px;
+}
+.single-feature-txt p i {
+  color: #efce4a;
+  margin-left: 5px;
+}
+span.spacial-feature-icon i {
+  color: #a9a9a9;
+}
+span.feature-review {
+  margin-left: 10px;
+}
+.single-feature-txt p {
+  font-size: 14px;
+}
+.single-feature-txt h3 a,
+.single-blog-txt h2 a {
+  color: #5f5b57;
+  margin: 10px 0px 15px;
+}
+.single-feature-txt h5 {
+  color: #5f5b57;
+  font-weight: 400;
+}
+.single-feature-txt h4 {
+  text-align: center;
+}
+/* News-letter */
+.newsletter {
+  padding: 120px 0 75px;
+  background-color: #f1f5f8;
+  align-items: center;
+}
+.newsletter .container {
+  width: 90%;
+  margin: auto;
+}
+.newsletter .row {
+  display: flex;
+  justify-content: space-between;
+}
+.hm-footer-widget {
+  margin-bottom: 10px;
+}
+.hm-footer-widget li {
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+.hm-foot-title h4:not("last-child") {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.hm-foot-menu ul li a {
+  color: #738ca4;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.hm-foot-menu ul li a:hover {
+  color: #e99c2e;
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
+}
+.hm-foot-para p {
+  font-size: 20px;
+  text-transform: initial;
+  margin-bottom: 25px;
+}
+
+.hm-foot-email {
+  position: relative;
+}
+.foot-email-box .form-control {
+  background: #fff;
+  display: block;
+  padding: 15px 50px;
+  outline: 0 !important;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border: 0;
+}
+.foot-email-box input[type="text"] {
+  font-size: 14px;
+  color: #bcb7b2;
+}
+.foot-email-subscribe {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  background: transparent;
+  color: #e99c2e;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foot-email-box .form-control:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+
+.footer {
+  background: #f1f5f8;
+  display: flex;
+  align-items: center;
+  height: 154px;
+  justify-content: center;
+  text-align: center;
+}
+.hm-footer-copyright p,
+.hm-footer-copyright p a {
+  color: #273e54;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-social a i {
+  color: #a4aaaf;
+  margin: 0 18px 24px 0;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.footer-social i:hover {
+  color: #e99c2e;
+}
+.about-info {
+  margin: auto;
+  width: 90%;
+}
+.about-info .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-img {
+  width: 40%;
+}
+.about-info img {
+  width: 100%;
+}
+.about-text {
+  width: 50%;
+}
+.loginicon {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: fit-content;
 }
